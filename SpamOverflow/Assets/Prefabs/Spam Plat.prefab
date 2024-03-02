@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2840574613215927633}
   - component: {fileID: 2840574613215927634}
+  - component: {fileID: 2840574613215927637}
   - component: {fileID: 2840574613215927635}
   - component: {fileID: 2840574613215927636}
-  - component: {fileID: 2840574613215927637}
   m_Layer: 6
   m_Name: Spam Plat
   m_TagString: Untagged
@@ -87,6 +87,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2840574613215927637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2840574613215927638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ea6c038901a5f4e893d8ccefff540f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _touchPlay: 0
+  _isOver: 0
+  colorHexSiToca: CDBFBF
+  colorHexSiNoToca: FFFFFF
 --- !u!61 &2840574613215927635
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -129,24 +145,8 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4c1ed769c13d6e34aab2eaea8121b42f, type: 2}
   m_Interpolate: 2
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &2840574613215927637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2840574613215927638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0ea6c038901a5f4e893d8ccefff540f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _touchPlay: 0
-  _isOver: 0
-  colorHexSiToca: CDBFBF
-  colorHexSiNoToca: FFFFFF
