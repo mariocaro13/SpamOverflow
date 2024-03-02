@@ -12,10 +12,11 @@ public class RespawnOut : MonoBehaviour
 	{
 		rb = GetComponent<Rigidbody2D>();
 	}
+
 	public void ReSpawnOut()
 	{
 		rb.velocity = Vector2.zero;
 
 		transform.position = startPoint.position;
-	}
+	}  
 }

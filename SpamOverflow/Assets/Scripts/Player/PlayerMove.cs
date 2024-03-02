@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-	private Rigidbody2D rb;
+	[HideInInspector] public Rigidbody2D rb;
 
 	public Transform groundCheck;
 	private LayerMask groundLayer;
@@ -74,7 +74,7 @@ public class PlayerMove : MonoBehaviour
 			coyoteTime -= Time.deltaTime;
 
 		if (Input.GetButtonDown("Jump") && verticalInput >= 0)
-			jumpBufferTime = 0.15f;
+			jumpBufferTime = 0.15f;	
 		else
 			jumpBufferTime -= Time.deltaTime;
 
