@@ -17,13 +17,7 @@ public class EnemyMove : MonoBehaviour
     void   Start() {
         Flip();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     	private void FixedUpdate()
 	{
         Move();
@@ -35,8 +29,6 @@ public class EnemyMove : MonoBehaviour
 
     	private void Flip() {
 		if (!_facingRight)
-		{
-            speed = speed * -1;
-		}		
+            speed *= -1;
 	}
 }
