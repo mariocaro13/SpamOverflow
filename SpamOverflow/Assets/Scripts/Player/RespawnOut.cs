@@ -1,9 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RespawnOut : MonoBehaviour
 {
+	[SerializeField] private GameObject containerSpamDead;
 	private Rigidbody2D rb;
 
 	public Transform startPoint;
@@ -16,7 +15,7 @@ public class RespawnOut : MonoBehaviour
 	public void ReSpawnOut()
 	{
 		rb.velocity = Vector2.zero;
-
+		containerSpamDead.SendMessageUpwards("SpawnSpamDeads");
 		transform.position = startPoint.position;
 	}  
 }
