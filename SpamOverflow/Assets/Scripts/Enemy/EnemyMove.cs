@@ -31,6 +31,9 @@ public class EnemyMove : MonoBehaviour
 
     private void Flip() {
 		if (!_facingRight)
+        {
             speed *= -1;
-	}
+			transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+        }
+    }
 }
