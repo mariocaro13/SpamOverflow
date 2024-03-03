@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,7 @@ using UnityEngine;
 public class Laser : MonoBehaviour
 {
 	private Vector2 targetDirection;
-	private Vector2 currentDirection;
+	public Vector2 currentDirection;
 
 	public float trackingSpeed = 1f; // Velocidad a la que el láser sigue al jugador
 
@@ -14,14 +15,15 @@ public class Laser : MonoBehaviour
 
 	private LayerMask groundLayer;
 	private LayerMask playerLayer;
+	private LayerMask plataformLayer;
 
 	void Start()
 	{
 		player = GameObject.Find("Player");
 		groundLayer = LayerMask.GetMask("Ground");
 		playerLayer = LayerMask.GetMask("Player");
+		plataformLayer = LayerMask.GetMask("Spam Plat");
 		lineRenderer = GetComponent<LineRenderer>();
-		currentDirection = transform.right; // Inicializa con la dirección inicial del láser
 	}
 
 	void Update()
@@ -33,7 +35,7 @@ public class Laser : MonoBehaviour
 		currentDirection = Vector2.MoveTowards(currentDirection, targetDirection, trackingSpeed * Time.deltaTime);
 
 		// Realiza un Raycast en la dirección actual suavizada
-		RaycastHit2D hit = Physics2D.Raycast(transform.position, currentDirection, Mathf.Infinity, groundLayer | playerLayer);
+		RaycastHit2D hit = Physics2D.Raycast(transform.position, currentDirection, Mathf.Infinity, groundLayer | playerLayer | plataformLayer);
 
 		if (hit.collider != null && hit.collider.CompareTag("Player"))
 		{

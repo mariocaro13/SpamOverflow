@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8773258701254255136}
   - component: {fileID: -998934708138962313}
   m_Layer: 8
-  m_Name: Enemy
+  m_Name: Enemy Slow
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e72fbb01923a7448bd075ab68da0bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 2
   _facingRight: 0
 --- !u!50 &2029836315916254365
 Rigidbody2D:

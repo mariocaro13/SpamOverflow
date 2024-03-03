@@ -97,7 +97,7 @@ public class SpamMove : MonoBehaviour
 
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
-		if (collision.gameObject.CompareTag("Player")  && _amIPalatform)
+		if ((collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Enemy")) && _amIPalatform)
 		{
 			Rigidbody2D playerRb = collision.gameObject.GetComponent<Rigidbody2D>();
 			playerRb.velocity = Vector2.zero;
