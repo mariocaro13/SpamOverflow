@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 5316408364342209350, guid: af2972f31d6c35d47aa6ddbf85a88b86, type: 3}
+  _AmIEnemy: 1
   spawnTimer: 0
   spawnRate: 5
   _facingRight: 0
@@ -116,10 +117,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ea6c038901a5f4e893d8ccefff540f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _touchPlay: 0
-  _isOver: 1
-  colorHexSiToca: CDBFBF
-  colorHexSiNoToca: FFFFFF
+  _amIPalatform: 0
+  s_colorDefault: 
+  s_colorOnAction: 
 --- !u!61 &1855570568497654036
 BoxCollider2D:
   m_ObjectHideFlags: 0
