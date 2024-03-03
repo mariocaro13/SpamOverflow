@@ -70,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -630562609
-  m_SortingLayer: 1
+  m_SortingLayerID: 1303945443
+  m_SortingLayer: -1
   m_SortingOrder: 1
   m_Sprite: {fileID: 1432620028, guid: 1b78e26fedd9d45bf9a8e8062d461644, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -101,27 +101,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1855570568497654037, guid: dbd4775105de84d4e9ef5a78e33cad68, type: 3}
       propertyPath: m_SortingLayer
-      value: 1
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 1855570568497654037, guid: dbd4775105de84d4e9ef5a78e33cad68, type: 3}
       propertyPath: m_SortingLayerID
-      value: -630562609
+      value: 1303945443
       objectReference: {fileID: 0}
     - target: {fileID: 1855570568497654038, guid: dbd4775105de84d4e9ef5a78e33cad68, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1855570568497654038, guid: dbd4775105de84d4e9ef5a78e33cad68, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855570568497654038, guid: dbd4775105de84d4e9ef5a78e33cad68, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.199001
+      value: 14.43
       objectReference: {fileID: 0}
     - target: {fileID: 1855570568497654038, guid: dbd4775105de84d4e9ef5a78e33cad68, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.82837206
+      value: -1.25
       objectReference: {fileID: 0}
     - target: {fileID: 1855570568497654038, guid: dbd4775105de84d4e9ef5a78e33cad68, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.10006745
       objectReference: {fileID: 0}
     - target: {fileID: 1855570568497654038, guid: dbd4775105de84d4e9ef5a78e33cad68, type: 3}
       propertyPath: m_LocalRotation.w
@@ -129,15 +133,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1855570568497654038, guid: dbd4775105de84d4e9ef5a78e33cad68, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1855570568497654038, guid: dbd4775105de84d4e9ef5a78e33cad68, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1855570568497654038, guid: dbd4775105de84d4e9ef5a78e33cad68, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1855570568497654038, guid: dbd4775105de84d4e9ef5a78e33cad68, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -157,7 +161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8103880121165948696, guid: dbd4775105de84d4e9ef5a78e33cad68, type: 3}
       propertyPath: spawnRate
-      value: 5
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 8103880121165948696, guid: dbd4775105de84d4e9ef5a78e33cad68, type: 3}
       propertyPath: enemyPrefab

@@ -22,7 +22,10 @@ public class EnemyMove : MonoBehaviour
 
    private void    OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("Player"))
-            collision.gameObject.SendMessageUpwards("ReSpawnOut");
+        {
+			collision.gameObject.SendMessageUpwards("ReSpawnOut");
+            Destroy(gameObject);
+		}        
     } 
 
     private void Move() {
