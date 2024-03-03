@@ -133,6 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPoint: {fileID: 0}
+  muertes: 0
 --- !u!114 &1754400541965681225
 MonoBehaviour:
   m_ObjectHideFlags: 0

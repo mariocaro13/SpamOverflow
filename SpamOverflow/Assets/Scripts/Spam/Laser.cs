@@ -41,7 +41,6 @@ public class Laser : MonoBehaviour
 		{
 			// Intenta enviar un mensaje al script del jugador
 			hit.collider.gameObject.SendMessage("ReSpawnOut", SendMessageOptions.DontRequireReceiver);
-			Debug.Log("Player hit by laser!"); // Confirmación de que el raycast detectó al jugador
 		}
 
 		// Asegúrate de que el raycast golpeó algo para evitar errores

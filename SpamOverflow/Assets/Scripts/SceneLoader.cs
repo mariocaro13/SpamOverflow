@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    private bool _canOpen;
+    public bool _canOpen;
 
     public string sceneName;
 
