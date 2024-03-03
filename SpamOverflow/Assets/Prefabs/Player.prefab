@@ -151,7 +151,7 @@ MonoBehaviour:
   speed: 8
   jumpForce: 15.5
   coyoteTime: 0.15
-  jumpBufferTime: 0.15
+  jumpBufferTime: 0
 --- !u!70 &1754400541965681230
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
