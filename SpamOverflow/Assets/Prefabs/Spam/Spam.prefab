@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 2840574613215927635}
   - component: {fileID: 2840574613215927636}
   - component: {fileID: 2840574613215927637}
-  m_Layer: 6
-  m_Name: Spam Over
+  m_Layer: 0
+  m_Name: Spam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -146,7 +146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ea6c038901a5f4e893d8ccefff540f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _touchPlay: 0
-  _isOver: 1
-  colorHexSiToca: CDBFBF
-  colorHexSiNoToca: FFFFFF
+  _amIPalatform: 0
+  s_colorDefault: 
+  s_colorOnAction: 

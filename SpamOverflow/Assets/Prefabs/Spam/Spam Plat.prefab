@@ -99,10 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ea6c038901a5f4e893d8ccefff540f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _touchPlay: 0
-  _isOver: 0
-  colorHexSiToca: CDBFBF
-  colorHexSiNoToca: FFFFFF
+  _amIPalatform: 1
+  s_colorDefault: FFFFFFF
+  s_colorOnAction: CDBFBF
 --- !u!61 &2840574613215927635
 BoxCollider2D:
   m_ObjectHideFlags: 0

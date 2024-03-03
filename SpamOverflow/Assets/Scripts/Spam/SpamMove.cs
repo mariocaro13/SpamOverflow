@@ -1,76 +1,64 @@
-using System.Collections;
-using System.Collections.Generic;
+using System.Linq.Expressions;
 using UnityEngine;
 
 public class SpamMove : MonoBehaviour
 {
-	private float spamSpeed = 1f;
-
-	private bool _cursorIN;
-	private bool _spamMove;
-	public bool _touchPlay;
-	public bool _isOver;
-
 	private Rigidbody2D rb;
-	private CursorMove cursorMove;
 	private GameObject Cursor;
+	private CursorMove cursorMove;
+	private Color c_default;
+	private Color c_onAction;
 
-	public string colorHexSiToca = "A9A9A9";
-	public string colorHexSiNoToca = "0082FF";
+	[SerializeField] private bool _amIPalatform;
+	private bool _canMove;
+	private bool _isTouchingCursor;
+	private bool _isTouchingPlayer;
+
+	public string s_colorDefault;
+	public string s_colorOnAction;
+
+	private float speed = 1f;
 
 	private void Awake()
 	{
 		rb = GetComponent<Rigidbody2D>();
+
 		Cursor = GameObject.Find("Cursor");
 		cursorMove = Cursor.GetComponent<CursorMove>();
+
+		if (_amIPalatform)
+		{
+			c_default = HexToColor(s_colorDefault);
+			c_onAction = HexToColor(s_colorOnAction);
+		}
 	}
 
 	private void Update()
 	{
-		if (_cursorIN && !_touchPlay && Input.GetMouseButtonDown(0))
+		if (_isTouchingCursor && !_isTouchingPlayer && Input.GetMouseButtonDown(0))
+			_canMove = true;
+		
+		if (Input.GetMouseButtonUp(0) || _isTouchingPlayer)
 		{
-			_spamMove = true;
-		}
-		else if (Input.GetMouseButtonUp(0) || _touchPlay)
-		{
-			_spamMove = false;
+			_canMove = false;
 			rb.velocity = Vector3.zero;
 		}
 
-		if (_isOver)
-		{
-			_touchPlay = false;
-		}
+		if (!_amIPalatform)
+			_isTouchingPlayer = false;
 
-		MovSpam();
-
-		ChangeColorCantMove();
+		Move();
 	}
 
-	private void MovSpam()
+	private void Move()
 	{
-		if (_spamMove)
-		{
-			//Debug.Log(cursorMov.rb.velocity);
-			//rb.velocity = cursorMov.rb.velocity;
-
-			rb.velocity = cursorMove.velocity * spamSpeed;
-		}
+		if (_canMove)
+			rb.velocity = cursorMove.velocity * speed;	
 	}
 
-	private void ChangeColorCantMove()
+	private void ChangeColor(Color color)
 	{
-		Color colorSiToca = HexToColor(colorHexSiToca);
-		Color colorSiNoToca = HexToColor(colorHexSiNoToca);
-
-		if (_touchPlay)
-		{
-			GetComponent<Renderer>().material.color = colorSiToca;
-		}
-		else
-		{
-			GetComponent<Renderer>().material.color = colorSiNoToca;
-		}
+		GetComponent<Renderer>().material.color = color;
 	}
 
 	Color HexToColor(string hex)
@@ -84,27 +72,24 @@ public class SpamMove : MonoBehaviour
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		if (collision.gameObject.CompareTag("Cursor"))
-		{
-			_cursorIN = true;
-		}
+			_isTouchingCursor = true;
 
-		if (collision.gameObject.CompareTag("Player"))
+		if (collision.gameObject.CompareTag("Player") && _amIPalatform)
 		{
-			if (!_isOver)
-				_touchPlay = true;
+				ChangeColor(c_onAction);
+				_isTouchingPlayer = true;
 		}
 	}
 
 	private void OnTriggerExit2D(Collider2D collision)
 	{
 		if (collision.gameObject.CompareTag("Cursor"))
-		{
-			_cursorIN = false;
-		}
+			_isTouchingCursor = false;
 
-		if (collision.gameObject.CompareTag("Player"))
+		if (collision.gameObject.CompareTag("Player") && _amIPalatform)
 		{
-			_touchPlay = false;
+			ChangeColor(c_default);
+			_isTouchingPlayer = false;		
 		}
 	}
 }

@@ -11,11 +11,11 @@ public class EnemyMove : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void   Start() {
+    void   Start()
+    {
         Flip();
     }
-
-    	private void FixedUpdate()
+    private void FixedUpdate()
 	{
         Move();
 	}
@@ -29,7 +29,7 @@ public class EnemyMove : MonoBehaviour
         rb.velocity = new Vector2(speed, rb.velocity.y);
     }
 
-    	private void Flip() {
+    private void Flip() {
 		if (!_facingRight)
             speed *= -1;
 	}
