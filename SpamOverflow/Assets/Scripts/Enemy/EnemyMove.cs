@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class EnemyMove : MonoBehaviour
@@ -17,11 +14,16 @@ public class EnemyMove : MonoBehaviour
     void   Start() {
         Flip();
     }
-    
+
     	private void FixedUpdate()
 	{
         Move();
 	}
+
+   private void    OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.CompareTag("Player"))
+            collision.gameObject.SendMessageUpwards("ReSpawnOut");
+    } 
 
     private void Move() {
         rb.velocity = new Vector2(speed, rb.velocity.y);
