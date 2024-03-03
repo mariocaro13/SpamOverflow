@@ -6,7 +6,7 @@ public class Respawn : MonoBehaviour
 {
     private GameObject player;
 
-    void Start()
+	void Start()
     {
         player = GameObject.Find("Player");
 

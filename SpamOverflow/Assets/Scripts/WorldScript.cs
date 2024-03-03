@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class World : MonoBehaviour
+public class WorldScript : MonoBehaviour
 {
-	public static World instance;
-	public int Muertes;
+	public static WorldScript instance;
+	public int muertes;
 
 	void Awake()
 	{

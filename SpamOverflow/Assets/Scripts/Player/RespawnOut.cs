@@ -9,6 +9,9 @@ public class RespawnOut : MonoBehaviour
 
 	public Transform startPoint;
 
+	private GameObject World;
+	private WorldScript scriptWorld;
+
 	private string sceneName;
 
 	private void Awake()
@@ -16,6 +19,9 @@ public class RespawnOut : MonoBehaviour
 		rb = GetComponent<Rigidbody2D>();
 
 		sceneName = SceneManager.GetActiveScene().name;
+
+		World = GameObject.Find("World");
+		scriptWorld = World.GetComponent<WorldScript>();
 	}
 
 	public void ReSpawnOut()
@@ -23,6 +29,8 @@ public class RespawnOut : MonoBehaviour
 		rb.velocity = Vector2.zero;
 
 		transform.position = startPoint.position;
+
+		scriptWorld.muertes++;
 
 		SceneManager.LoadScene(sceneName);
 	}  
