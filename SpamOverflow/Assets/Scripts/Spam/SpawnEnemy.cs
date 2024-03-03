@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnEnemy : MonoBehaviour
 {
     public GameObject enemyPrefab;
-    public float spawnTimer;
+    [SerializeField] private float spawnTimer;
+    [SerializeField] private float spawnRate;
     [SerializeField] private bool _facingRight;
 
     void Start()
@@ -16,18 +15,16 @@ public class SpawnEnemy : MonoBehaviour
     void Update()
     {
         spawnTimer += Time.deltaTime;
-        if (spawnTimer > 5f)
+        if (spawnTimer > spawnRate)
         {
             spawnTimer = 0;
             SpawnEnemys();
         }
     }
 
-    private void SpawnEnemys(){
-
+    private void SpawnEnemys() {
         GameObject enemy = Instantiate(enemyPrefab, transform.position, Quaternion.identity);
         EnemyMove enMove = enemy.GetComponent<EnemyMove>();
-        enMove._facingRight = _facingRight;
-        
+        enMove._facingRight = _facingRight;   
     }
 }
