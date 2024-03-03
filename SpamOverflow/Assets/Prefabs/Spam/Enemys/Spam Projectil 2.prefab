@@ -95,6 +95,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spam Projectil 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1855570568497654033, guid: dbd4775105de84d4e9ef5a78e33cad68, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1855570568497654037, guid: dbd4775105de84d4e9ef5a78e33cad68, type: 3}
       propertyPath: m_SortingLayer
       value: 1
@@ -163,6 +167,10 @@ PrefabInstance:
       propertyPath: enemyPrefab
       value: 
       objectReference: {fileID: 5316408364342209350, guid: c77bcb97bc0c04581ae48980f49e6f02, type: 3}
+    - target: {fileID: 8103880121165948696, guid: dbd4775105de84d4e9ef5a78e33cad68, type: 3}
+      propertyPath: _amIProjectile
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbd4775105de84d4e9ef5a78e33cad68, type: 3}
 --- !u!4 &1379397628770854249 stripped

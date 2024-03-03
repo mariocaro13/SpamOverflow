@@ -100,11 +100,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 397874c3a9e2c4bdfb706bb1cb5a9871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 5316408364342209350, guid: af2972f31d6c35d47aa6ddbf85a88b86, type: 3}
-  _AmIEnemy: 1
+  _amIProjectile: 0
   spawnTimer: 0
   spawnRate: 5
   _facingRight: 0
+  enemyPrefab: {fileID: 5316408364342209350, guid: af2972f31d6c35d47aa6ddbf85a88b86, type: 3}
 --- !u!114 &1855570568497654034
 MonoBehaviour:
   m_ObjectHideFlags: 0
