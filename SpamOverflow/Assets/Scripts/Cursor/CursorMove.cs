@@ -10,11 +10,13 @@ public class CursorMove : MonoBehaviour
 	public float moveSpeed = 100f;
 
 	[HideInInspector] public Rigidbody2D rb;
+	private Animator animator;
 
 
 	private void Awake()
 	{
 		rb = GetComponent<Rigidbody2D>();
+		animator = GetComponent<Animator>();
 	}
 
 	private void Start()
@@ -40,5 +42,21 @@ public class CursorMove : MonoBehaviour
 		// Calcula la velocidad basada en el cambio de posición
 		velocity = (transform.position - mousePosition) / Time.deltaTime;
 		mousePosition = transform.position;
+	}
+
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.gameObject.CompareTag("Spam Plat"))
+		{
+			animator.SetBool("_isTouching", true);
+		}
+	}
+
+	private void OnTriggerExit2D(Collider2D collision)
+	{
+		if (collision.gameObject.CompareTag("Spam Plat"))
+		{
+			animator.SetBool("_isTouching", false);
+		}
 	}
 }
