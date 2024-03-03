@@ -27,7 +27,7 @@ public class PlayerMove : MonoBehaviour
 	private void Awake() {
 		rb = GetComponent<Rigidbody2D>();
 		groundLayer = LayerMask.GetMask("Ground");
-		plataformLayer = LayerMask.GetMask("OneWayPlataform");
+		plataformLayer = LayerMask.GetMask("Spam Plat");
 	}
 
 	void Update() {

@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class EnemyMove : MonoBehaviour
@@ -14,29 +11,32 @@ public class EnemyMove : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void   Start() {
+    void   Start()
+    {
         Flip();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    	private void FixedUpdate()
+    private void FixedUpdate()
 	{
         Move();
 	}
+
+   private void    OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+			collision.gameObject.SendMessageUpwards("ReSpawnOut");
+            Destroy(gameObject);
+		}        
+    } 
 
     private void Move() {
         rb.velocity = new Vector2(speed, rb.velocity.y);
     }
 
-    	private void Flip() {
+    private void Flip() {
 		if (!_facingRight)
-		{
-            speed = speed * -1;
-		}		
-	}
+        {
+            speed *= -1;
+			transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+        }
+    }
 }
