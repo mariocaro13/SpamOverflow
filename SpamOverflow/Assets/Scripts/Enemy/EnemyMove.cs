@@ -22,7 +22,10 @@ public class EnemyMove : MonoBehaviour
 
    private void    OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("Player"))
-            collision.gameObject.SendMessageUpwards("ReSpawnOut");
+        {
+			collision.gameObject.SendMessageUpwards("ReSpawnOut");
+            Destroy(gameObject);
+		}        
     } 
 
     private void Move() {
@@ -31,6 +34,9 @@ public class EnemyMove : MonoBehaviour
 
     private void Flip() {
 		if (!_facingRight)
+        {
             speed *= -1;
-	}
+			transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+        }
+    }
 }

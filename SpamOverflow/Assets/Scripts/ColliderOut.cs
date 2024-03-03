@@ -7,7 +7,7 @@ public class ColliderOut : MonoBehaviour
 		if (collision.gameObject.CompareTag("Player"))
 			collision.SendMessageUpwards("ReSpawnOut");
 
-		if (!collision.gameObject.CompareTag("Player") && !collision.gameObject.CompareTag("Cursor"))
+		if (!collision.gameObject.CompareTag("Player"))
             Destroy(collision.gameObject);
 	}
 }
