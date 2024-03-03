@@ -31,6 +31,7 @@ public class RespawnOut : MonoBehaviour
 		transform.position = startPoint.position;
 
 		scriptWorld.muertes++;
+		scriptWorld.SpawnSpamDeads();
 
 		SceneManager.LoadScene(sceneName);
 	}  

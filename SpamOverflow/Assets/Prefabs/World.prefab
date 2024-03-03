@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   muertes: 0
+  spamDeadPrefab: {fileID: 2840574613215927638, guid: bd8213b6b89a8044d8aef3fb27799de3, type: 3}
+  parentObject: {fileID: 6061315921387918274}
 --- !u!61 &2020550801
 BoxCollider2D:
   m_ObjectHideFlags: 0
