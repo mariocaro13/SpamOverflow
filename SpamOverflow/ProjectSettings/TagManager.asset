@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Cursor
   - Enemy
+  - Spam Plat
   layers:
   - Default
   - TransparentFX

@@ -84,7 +84,9 @@ public class SpamMove : MonoBehaviour
 	private void OnTriggerExit2D(Collider2D collision)
 	{
 		if (collision.gameObject.CompareTag("Cursor"))
+		{
 			_isTouchingCursor = false;
+		}
 
 		if (collision.gameObject.CompareTag("Player") && _amIPalatform)
 		{

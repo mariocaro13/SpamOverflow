@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2840574613215927636}
   m_Layer: 6
   m_Name: Spam Plat
-  m_TagString: Untagged
+  m_TagString: Spam Plat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _amIPalatform: 1
-  s_colorDefault: FFFFFFF
+  s_colorDefault: FFFFFF
   s_colorOnAction: CDBFBF
 --- !u!61 &2840574613215927635
 BoxCollider2D:

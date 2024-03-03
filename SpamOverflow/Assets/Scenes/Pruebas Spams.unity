@@ -135,12 +135,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2840574613215927633, guid: dea0836f213c9ed49bbf0bc3d22c4c1c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.339
+      objectReference: {fileID: 0}
+    - target: {fileID: 2840574613215927633, guid: dea0836f213c9ed49bbf0bc3d22c4c1c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6061161
+      objectReference: {fileID: 0}
+    - target: {fileID: 2840574613215927633, guid: dea0836f213c9ed49bbf0bc3d22c4c1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.511168
+      value: 1.9538
       objectReference: {fileID: 0}
     - target: {fileID: 2840574613215927633, guid: dea0836f213c9ed49bbf0bc3d22c4c1c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.447463
+      value: -1.807
       objectReference: {fileID: 0}
     - target: {fileID: 2840574613215927633, guid: dea0836f213c9ed49bbf0bc3d22c4c1c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -173,10 +181,6 @@ PrefabInstance:
     - target: {fileID: 2840574613215927633, guid: dea0836f213c9ed49bbf0bc3d22c4c1c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2840574613215927637, guid: dea0836f213c9ed49bbf0bc3d22c4c1c, type: 3}
-      propertyPath: s_colorDefault
-      value: FFFFFF
       objectReference: {fileID: 0}
     - target: {fileID: 2840574613215927638, guid: dea0836f213c9ed49bbf0bc3d22c4c1c, type: 3}
       propertyPath: m_Name
@@ -515,11 +519,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7611226252431305149, guid: 81d8bc36e50244a43bf25f2b29f71da4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.34551963
+      value: 7.53
       objectReference: {fileID: 0}
     - target: {fileID: 7611226252431305149, guid: 81d8bc36e50244a43bf25f2b29f71da4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.12630045
+      value: -2.69
       objectReference: {fileID: 0}
     - target: {fileID: 7611226252431305149, guid: 81d8bc36e50244a43bf25f2b29f71da4, type: 3}
       propertyPath: m_LocalPosition.z
