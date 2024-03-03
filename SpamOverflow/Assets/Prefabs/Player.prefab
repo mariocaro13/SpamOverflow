@@ -44,7 +44,6 @@ GameObject:
   - component: {fileID: 7615614212901371774}
   - component: {fileID: 1754400541965681225}
   - component: {fileID: 1754400541965681230}
-  - component: {fileID: 3310375337335905618}
   - component: {fileID: 1754400541965681229}
   m_Layer: 3
   m_Name: Player
@@ -167,6 +166,7 @@ CapsuleCollider2D:
   m_Offset: {x: -0.098959684, y: -0.5879393}
   m_Size: {x: 0.9321494, y: 1.9722809}
   m_Direction: 0
+<<<<<<< Updated upstream
 --- !u!70 &3310375337335905618
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -183,6 +183,8 @@ CapsuleCollider2D:
   m_Offset: {x: -0.08113003, y: -0.60847354}
   m_Size: {x: 1.3267078, y: 2.327053}
   m_Direction: 0
+=======
+>>>>>>> Stashed changes
 --- !u!50 &1754400541965681229
 Rigidbody2D:
   serializedVersion: 4

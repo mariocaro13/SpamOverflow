@@ -84,6 +84,7 @@ public class SpamMove : MonoBehaviour
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		if (collision.gameObject.CompareTag("Cursor"))
+<<<<<<< Updated upstream
 		{
 			_cursorIN = true;
 		}
@@ -93,6 +94,9 @@ public class SpamMove : MonoBehaviour
 			if (!_isOver)
 				_touchPlay = true;
 		}
+=======
+			_isTouchingCursor = true;
+>>>>>>> Stashed changes
 	}
 
 	private void OnTriggerExit2D(Collider2D collision)
@@ -104,7 +108,36 @@ public class SpamMove : MonoBehaviour
 
 		if (collision.gameObject.CompareTag("Player"))
 		{
+<<<<<<< Updated upstream
 			_touchPlay = false;
+=======
+			ChangeColor(c_default);
+			_isTouchingPlayer = false;
+		}
+	}
+
+	private void OnCollisionEnter2D(Collision2D collision)
+	{
+		if ((collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Enemy")) && _amIPalatform)
+		{
+			Rigidbody2D playerRb = collision.gameObject.GetComponent<Rigidbody2D>();
+			playerRb.velocity = Vector2.zero;
+>>>>>>> Stashed changes
+		}
+
+		if (collision.gameObject.CompareTag("Player") && _amIPalatform)
+		{
+			ChangeColor(c_onAction);
+			_isTouchingPlayer = true;
+		}
+	}
+
+	private void OnCollisionExit2D(Collision2D collision)
+	{
+		if (collision.gameObject.CompareTag("Player") && _amIPalatform)
+		{
+			ChangeColor(c_default);
+			_isTouchingPlayer = false;
 		}
 	}
 }
