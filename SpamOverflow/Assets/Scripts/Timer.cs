@@ -37,9 +37,12 @@ public class Timer : MonoBehaviour
 			timerGame = timerGame + Time.deltaTime;
 			timerLevel = timerLevel - Time.deltaTime;
 		}
-		
+
+		int minutosGame = (int)timerGame / 60;
+		float segundosGame = timerGame % 60;
+
 		timerLevelPro.text = timerLevel.ToString("f1");
-		timerGamePro.text = timerGame.ToString("f0");
+		timerGamePro.text = string.Format("{0:00}:{1:00}", minutosGame, segundosGame);
 		scorePro.text = score.ToString("f0");
 		scorePro2.text = score.ToString("f0");
 
