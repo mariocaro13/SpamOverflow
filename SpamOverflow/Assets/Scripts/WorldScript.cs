@@ -32,6 +32,6 @@ public class WorldScript : MonoBehaviour
 		float y = Random.Range(spawnArea.bounds.min.y, spawnArea.bounds.max.y);
 
 		GameObject spamDeadObject = Instantiate(spamDeadPrefab, new Vector2(x, y), Quaternion.identity);
-		spamDeadObject.transform.SetParent(this.transform, true);
+		spamDeadObject.transform.SetParent(transform, true);
 	}
 }
