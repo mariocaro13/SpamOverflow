@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e1391b81098853c4884263fcd451dfac
+guid: 3f51b6ed9f86bf24a82a78f60b3b42f1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,70 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SilksongClown_0
+      name: Happiness_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 64
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe6340df7ba6d94298f1d2acda72f61
+      internalID: -1816900208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happiness_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 220
+        width: 64
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716f607d5911b2243968418a6a70423e
+      internalID: 63566103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happiness_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 220
+        width: 64
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67b20cf20a624e4abdda4250f29355f
+      internalID: -1397992490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happiness_3
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f87a02ac06497240bcab1deb96feff4
-      internalID: 1241200504
+      spriteID: ee6f1e0faade6e847bdabc4a5d445fee
+      internalID: -1778847830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SilksongClown_1
+      name: Happiness_4
       rect:
         serializedVersion: 2
         x: 64
@@ -140,14 +203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9998f24d8ba4df4dad6c2364b2bbbf5
-      internalID: -1362620159
+      spriteID: 76c53fa18e3de7a4ea2842748701f836
+      internalID: -2035316547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SilksongClown_2
+      name: Happiness_5
       rect:
         serializedVersion: 2
         x: 128
@@ -161,35 +224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67aa66ac5a93f9e4184553fb861c8143
-      internalID: -536081810
+      spriteID: 45d3f919953af614d8584ad984431d3f
+      internalID: 1197307052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SilksongClown_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 176
-        width: 64
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2599ff2e847912243b7342d5cbc73711
-      internalID: 1215130249
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SilksongClown_4
+      name: Happiness_6
       rect:
         serializedVersion: 2
         x: 0
@@ -203,14 +245,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01eb1a379f78f054c9a477e6ba185354
-      internalID: -2139250082
+      spriteID: 7eb81c5f6ef4e494887e47545f04a0a3
+      internalID: 1264021000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SilksongClown_5
+      name: Happiness_7
       rect:
         serializedVersion: 2
         x: 64
@@ -224,14 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36122fd994c23a54b955aec2b8e2ca1d
-      internalID: -1501463294
+      spriteID: 1821c7b90e3b11a4e91ff689a2b51fa4
+      internalID: 1892489089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SilksongClown_6
+      name: Happiness_8
       rect:
         serializedVersion: 2
         x: 128
@@ -245,35 +287,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43ea0e295bf3b8a41bb031a2dd0e5dcf
-      internalID: -1470377695
+      spriteID: b6a1c91994a90704db6aa781fc9bfbaa
+      internalID: 364886776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SilksongClown_7
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 132
-        width: 64
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6007925ef7184eb489c22b6cb0ef9ff8
-      internalID: 1448812970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SilksongClown_8
+      name: Happiness_9
       rect:
         serializedVersion: 2
         x: 0
@@ -287,14 +308,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee27989d88624d741997e36a777837d8
-      internalID: -1817275812
+      spriteID: b3816c9aff618664a847b1ec65b57033
+      internalID: 379862484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SilksongClown_9
+      name: Happiness_10
       rect:
         serializedVersion: 2
         x: 64
@@ -308,14 +329,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 254c354c152fc034dae0a89d7ec031ff
-      internalID: -1889955827
+      spriteID: f1e77877ee63513448e9ee3160b76509
+      internalID: 1683320767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SilksongClown_10
+      name: Happiness_11
       rect:
         serializedVersion: 2
         x: 128
@@ -329,35 +350,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ec9b6b2948b55b4cbdaacdee6685b46
-      internalID: -667516662
+      spriteID: 28b76848e88eed64b87e763db4342dc9
+      internalID: -1330620792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SilksongClown_11
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 88
-        width: 64
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 33ae7186b813b6e45ab2d5cc31f47adf
-      internalID: 1067568166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SilksongClown_12
+      name: Happiness_12
       rect:
         serializedVersion: 2
         x: 0
@@ -371,14 +371,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 439b742dcef93254a87342c39e65d1ee
-      internalID: -494046125
+      spriteID: 1980fef9cf8c18543b093b85d57052b1
+      internalID: 1791114075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SilksongClown_13
+      name: Happiness_13
       rect:
         serializedVersion: 2
         x: 64
@@ -392,14 +392,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92c1593cda6fc5744b6b30bc5d669ca1
-      internalID: 1702455977
+      spriteID: 273025849e0a0704d95f7abbc788cfd1
+      internalID: 125173358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SilksongClown_14
+      name: Happiness_14
       rect:
         serializedVersion: 2
         x: 128
@@ -413,35 +413,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e65652f0e4e29549862f7fc8b24e7be
-      internalID: -1711031968
+      spriteID: f2bc9b0c66b19584a81006890151bc78
+      internalID: 1767128287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SilksongClown_15
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 44
-        width: 64
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9474cba555d58345a5be39a3a5944f6
-      internalID: -572046120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SilksongClown_16
+      name: Happiness_15
       rect:
         serializedVersion: 2
         x: 0
@@ -455,29 +434,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3393e73df63eb824199b3e178ac3e170
-      internalID: 727022813
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SilksongClown_17
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dde08925322b14c459051db9467ba0f5
-      internalID: 541513087
+      spriteID: 1807002fcbaf9b54bafcf0e57192d7eb
+      internalID: -1666057271
       vertices: []
       indices: 
       edges: []
@@ -493,24 +451,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SilksongClown_0: 1241200504
-      SilksongClown_1: -1362620159
-      SilksongClown_10: -667516662
-      SilksongClown_11: 1067568166
-      SilksongClown_12: -494046125
-      SilksongClown_13: 1702455977
-      SilksongClown_14: -1711031968
-      SilksongClown_15: -572046120
-      SilksongClown_16: 727022813
-      SilksongClown_17: 541513087
-      SilksongClown_2: -536081810
-      SilksongClown_3: 1215130249
-      SilksongClown_4: -2139250082
-      SilksongClown_5: -1501463294
-      SilksongClown_6: -1470377695
-      SilksongClown_7: 1448812970
-      SilksongClown_8: -1817275812
-      SilksongClown_9: -1889955827
+      Happiness_0: -1816900208
+      Happiness_1: 63566103
+      Happiness_10: 1683320767
+      Happiness_11: -1330620792
+      Happiness_12: 1791114075
+      Happiness_13: 125173358
+      Happiness_14: 1767128287
+      Happiness_15: -1666057271
+      Happiness_2: -1397992490
+      Happiness_3: -1778847830
+      Happiness_4: -2035316547
+      Happiness_5: 1197307052
+      Happiness_6: 1264021000
+      Happiness_7: 1892489089
+      Happiness_8: 364886776
+      Happiness_9: 379862484
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
