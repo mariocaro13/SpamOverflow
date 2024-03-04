@@ -9,6 +9,7 @@ public class PlayerMove : MonoBehaviour
 	public Transform groundCheck;
 	private LayerMask groundLayer;
 	private LayerMask plataformLayer;
+	private Animator animator;
 
 	private float horizontalInput;
 	private float verticalInput;
@@ -28,6 +29,7 @@ public class PlayerMove : MonoBehaviour
 		rb = GetComponent<Rigidbody2D>();
 		groundLayer = LayerMask.GetMask("Ground");
 		plataformLayer = LayerMask.GetMask("Spam Plat");
+		animator = GetComponent<Animator>();
 	}
 
 	void Update() {
@@ -41,6 +43,14 @@ public class PlayerMove : MonoBehaviour
 	}
 	private void FixedUpdate() {
 		Move();
+	}
+
+	private void LateUpdate()
+	{
+		animator.SetBool("Idle", movement == Vector2.zero);
+		animator.SetBool("IsGrounded", _isGrounded);
+		animator.SetFloat("VerticalVelocity", rb.velocity.y);
+		animator.SetFloat("HorizontalVelocity", rb.velocity.x);
 	}
 
 	private IEnumerator AllowPassThrough() {

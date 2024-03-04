@@ -32,8 +32,8 @@ Transform:
   m_LocalScale: {x: 0.55806, y: 0.55806, z: 0.55806}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2699015035514973058}
-  - {fileID: 8935573360506029826}
+  - {fileID: 4724135968994812372}
+  - {fileID: 7023448881434437922}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -151,7 +151,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!1 &3164535289741731550
+--- !u!1 &5622668360764927252
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,37 +159,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8935573360506029826}
-  - component: {fileID: 1149441733317639324}
+  - component: {fileID: 7023448881434437922}
+  - component: {fileID: 5705905305758934616}
   m_Layer: 0
-  m_Name: camman (1)
+  m_Name: camman death1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8935573360506029826
+--- !u!4 &7023448881434437922
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3164535289741731550}
-  m_LocalRotation: {x: -0, y: -0, z: 0.6087617, w: 0.7933532}
-  m_LocalPosition: {x: -0.22, y: -0.03, z: 0.072619185}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 5622668360764927252}
+  m_LocalRotation: {x: -0, y: -0, z: 0.00734939, w: 0.999973}
+  m_LocalPosition: {x: -0.18, y: -0.24, z: 0.13012792}
+  m_LocalScale: {x: 0.86212814, y: 0.86212814, z: 0.86212814}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2840574613215927633}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 75}
---- !u!212 &1149441733317639324
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.842}
+--- !u!212 &5705905305758934616
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3164535289741731550}
+  m_GameObject: {fileID: 5622668360764927252}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -224,8 +224,8 @@ SpriteRenderer:
   m_SortingLayerID: -630562609
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 3df03aa65e0c9a240bcbade720e87791, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 79c75fe2deea8ae4b81f91325fd8e26f, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.7529412}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -235,7 +235,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &8518893186779244012
+--- !u!1 &7052513637445364805
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -243,37 +243,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2699015035514973058}
-  - component: {fileID: 5533170585774591652}
+  - component: {fileID: 4724135968994812372}
+  - component: {fileID: 4839271769579922796}
   m_Layer: 0
-  m_Name: camman
+  m_Name: camman death1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2699015035514973058
+--- !u!4 &4724135968994812372
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8518893186779244012}
-  m_LocalRotation: {x: -0, y: -0, z: 0.6087617, w: 0.7933532}
-  m_LocalPosition: {x: -0.14, y: 0.07, z: 0.072619185}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 7052513637445364805}
+  m_LocalRotation: {x: -0, y: -0, z: 0.00734939, w: 0.999973}
+  m_LocalPosition: {x: -0.05, y: -0.19, z: 0.13012792}
+  m_LocalScale: {x: 0.86212814, y: 0.86212814, z: 0.86212814}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2840574613215927633}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 75}
---- !u!212 &5533170585774591652
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.842}
+--- !u!212 &4839271769579922796
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8518893186779244012}
+  m_GameObject: {fileID: 7052513637445364805}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -308,8 +308,8 @@ SpriteRenderer:
   m_SortingLayerID: -630562609
   m_SortingLayer: 1
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 3df03aa65e0c9a240bcbade720e87791, type: 3}
-  m_Color: {r: 0.8490566, g: 0.6928622, b: 0.6928622, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 79c75fe2deea8ae4b81f91325fd8e26f, type: 3}
+  m_Color: {r: 0.8509804, g: 0.69411767, b: 0.69411767, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
