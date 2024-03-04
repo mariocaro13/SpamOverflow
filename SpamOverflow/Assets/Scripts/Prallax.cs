@@ -6,8 +6,8 @@ public class Prallax : MonoBehaviour
 {
 	private float startpos;
 	public GameObject play;
-	public float parallaxEffect;
-	public float length;
+	public float parallaxEffect = 0;
+	public float length = 0;
 
 	void Start()
 	{
