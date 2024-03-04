@@ -98,7 +98,7 @@ public class Timer : MonoBehaviour
 			_isGameOver = false;
 		}
 
-		if (scene.name == "Level 1")
+		if (scene.name == "MainMenu")
 		{
 			score = 0;
 			timerGame = 0;
