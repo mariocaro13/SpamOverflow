@@ -46,7 +46,6 @@ public class WorldScript : MonoBehaviour
 
 	private void Bucle()
 	{
-		Debug.Log("Bucle" + muertes);
 		int numEnemies = muertes;
 		for (int i = 0; i < numEnemies; i++)
 		{
