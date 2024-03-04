@@ -9,7 +9,15 @@ public class SceneLoader : MonoBehaviour
 
     public string sceneName;
 
-    void Update()
+	public GameObject World;
+	private Timer timerScript;
+
+	private void Awake()
+	{
+		timerScript = World.GetComponent<Timer>();
+	}
+
+	void Update()
     {
         if (_canOpen && Input.GetKeyDown(KeyCode.W))
         {
