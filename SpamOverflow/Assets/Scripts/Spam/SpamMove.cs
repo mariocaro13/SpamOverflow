@@ -12,7 +12,7 @@ public class SpamMove : MonoBehaviour
 	[SerializeField] private bool _amIPalatform;
 	private bool _canMove;
 	private bool _isTouchingCursor;
-	private bool _isTouchingPlayer;
+	private bool _isTouchingPlayer = true;
 
 	public string s_colorDefault;
 	public string s_colorOnAction;
