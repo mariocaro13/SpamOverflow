@@ -11,6 +11,14 @@ public class WorldScript : MonoBehaviour
 	public GameObject spamDeadPrefab;
 	public Transform parentObject;
 	public int deadCount;
+	public Timer timerScript;
+
+	public string lastSceneLoaded;
+
+	private void Start()
+	{
+		lastSceneLoaded = SceneManager.GetActiveScene().name;
+	}
 
 	void Awake()
 	{
@@ -41,6 +49,12 @@ public class WorldScript : MonoBehaviour
 	{
 		for (int i = deadCount; i > 0; i--)
 			SpawnSpamDeads();
+
+		//if (lastSceneLoaded != scene.name)
+		//{
+		//	timerScript.SendMessage("NextLevel");
+		//	lastSceneLoaded = scene.name;
+		//}
 	}
 
 	public void SpawnSpamDeads()

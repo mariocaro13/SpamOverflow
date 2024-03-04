@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: c1efdb825759e41438e53b93802d0f79
   - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 0e58fbe165375c54d97c861179809ae5
+  - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 9d816041c3971d34a9f289d2114cac27
   - enabled: 1
@@ -50,6 +53,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Random 7.unity
     guid: 43d8953104509ed4895b742e00d1574a
+  - enabled: 1
+    path: Assets/Scenes/Random 8.unity
+    guid: daa8beb7acb51414f80a0a7a71c69e5b
   - enabled: 1
     path: Assets/Scenes/Template.unity
     guid: 3ac43e9a22f93e64da4759bea4edf54c
