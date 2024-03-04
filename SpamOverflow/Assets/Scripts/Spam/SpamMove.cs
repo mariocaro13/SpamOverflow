@@ -84,8 +84,6 @@ public class SpamMove : MonoBehaviour
 		{
 			ChangeColor(c_default);
 			_isTouchingPlayer = false;
-			ChangeColor(c_default);
-			_isTouchingPlayer = false;
 		}
 	}
 

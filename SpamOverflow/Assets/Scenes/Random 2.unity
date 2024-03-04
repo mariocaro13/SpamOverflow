@@ -481,6 +481,10 @@ PrefabInstance:
       value: Spam Projectil 2
       objectReference: {fileID: 0}
     - target: {fileID: 8832140806076623719, guid: 9a32cf885666e4945ac5ddbc7603a463, type: 3}
+      propertyPath: spawnRate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832140806076623719, guid: 9a32cf885666e4945ac5ddbc7603a463, type: 3}
       propertyPath: _facingRight
       value: 1
       objectReference: {fileID: 0}
@@ -537,7 +541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7923697500426279908, guid: 37246cfbb8d24fe4389fbbc6f76d3e5d, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7923697500426279908, guid: 37246cfbb8d24fe4389fbbc6f76d3e5d, type: 3}
       propertyPath: m_LocalScale.x
@@ -1077,7 +1081,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 302073326597832723, guid: 7d68c0e08ed28eb4683ed29aa55f8ef6, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 302073326597832723, guid: 7d68c0e08ed28eb4683ed29aa55f8ef6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1415,7 +1419,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7c0c17448233917448466a957262e586, type: 3}
-  m_Color: {r: 0.637104, g: 0.6835446, b: 0.9716981, a: 1}
+  m_Color: {r: 0.74403703, g: 0.74552727, b: 0.754717, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1616,7 +1620,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1754400541115740580
 PrefabInstance:
@@ -1635,7 +1639,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1754400541965681224, guid: 194051f354ac67244892cd2a7c0161ec, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1754400541965681224, guid: 194051f354ac67244892cd2a7c0161ec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1704,7 +1708,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5370933734981316946, guid: 82060876378706b4cbdaf65d826c85b8, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5370933734981316946, guid: 82060876378706b4cbdaf65d826c85b8, type: 3}
       propertyPath: m_LocalPosition.x
