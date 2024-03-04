@@ -19,7 +19,7 @@ public class SceneLoader : MonoBehaviour
 
 	void Update()
     {
-        if (_canOpen && Input.GetKeyDown(KeyCode.W))
+        if (_canOpen && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)))
         {
 			SceneManager.LoadScene(sceneName);
 		}
