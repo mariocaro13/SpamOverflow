@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ea6c038901a5f4e893d8ccefff540f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _amIPalatform: 1
+  _amIPlatform: 1
   s_colorDefault: FFFFFF
   s_colorOnAction: CDBFBF
 --- !u!61 &2840574613215927635

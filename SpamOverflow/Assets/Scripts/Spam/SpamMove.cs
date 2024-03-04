@@ -9,10 +9,10 @@ public class SpamMove : MonoBehaviour
 	private Color c_default;
 	private Color c_onAction;
 
-	[SerializeField] private bool _amIPalatform;
+	[SerializeField] private bool _amIPlatform;
 	private bool _canMove;
-	private bool _isTouchingCursor;
-	private bool _isTouchingPlayer = true;
+	private bool _isTouchingCursor = false;
+	private bool _isTouchingPlayer = false;
 
 	public string s_colorDefault;
 	public string s_colorOnAction;
@@ -26,7 +26,7 @@ public class SpamMove : MonoBehaviour
 		Cursor = GameObject.Find("Cursor");
 		cursorMove = Cursor.GetComponent<CursorMove>();
 
-		if (_amIPalatform)
+		if (_amIPlatform)
 		{
 			c_default = HexToColor(s_colorDefault);
 			c_onAction = HexToColor(s_colorOnAction);
@@ -44,7 +44,7 @@ public class SpamMove : MonoBehaviour
 			rb.velocity = Vector3.zero;
 		}
 
-		if (!_amIPalatform)
+		if (!_amIPlatform)
 			_isTouchingPlayer = false;
 
 		Move();
@@ -80,7 +80,7 @@ public class SpamMove : MonoBehaviour
 		if (collision.gameObject.CompareTag("Cursor"))
 			_isTouchingCursor = false;
 
-		if (collision.gameObject.CompareTag("Player") && _amIPalatform)
+		if (collision.gameObject.CompareTag("Player") && _amIPlatform)
 		{
 			ChangeColor(c_default);
 			_isTouchingPlayer = false;
@@ -89,13 +89,13 @@ public class SpamMove : MonoBehaviour
 
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
-		if ((collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Enemy")) && _amIPalatform)
+		if ((collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Enemy")) && _amIPlatform)
 		{
 			Rigidbody2D playerRb = collision.gameObject.GetComponent<Rigidbody2D>();
 			playerRb.velocity = Vector2.zero;
 		}
 
-		if (collision.gameObject.CompareTag("Player") && _amIPalatform)
+		if (collision.gameObject.CompareTag("Player") && _amIPlatform)
 		{
 			ChangeColor(c_onAction);
 			_isTouchingPlayer = true;
@@ -104,7 +104,7 @@ public class SpamMove : MonoBehaviour
 
 	private void OnCollisionExit2D(Collision2D collision)
 	{
-		if (collision.gameObject.CompareTag("Player") && _amIPalatform)
+		if (collision.gameObject.CompareTag("Player") && _amIPlatform)
 		{
 			ChangeColor(c_default);
 			_isTouchingPlayer = false;

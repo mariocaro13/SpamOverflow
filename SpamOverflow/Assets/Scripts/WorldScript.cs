@@ -1,20 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 using UnityEngine.SceneManagement;
 
 public class WorldScript : MonoBehaviour
 {
-	public static WorldScript instance;
-	public int muertes;
-
-	public bool _is = true;
-
 	private BoxCollider2D spawnArea;
+	public static WorldScript instance;
 	public GameObject spamDeadPrefab;
 	public Transform parentObject;
-
-	private float contador;
+	public int deadCount;
 
 	void Awake()
 	{
@@ -28,29 +24,6 @@ public class WorldScript : MonoBehaviour
 		else if (instance != this)
 		{
 			Destroy(gameObject);
-		}
-		
-		_is = true;
-	}
-
-	private void Update()
-	{
-		
-
-		if (_is)
-		{
-			Bucle();
-			 _is = false;
-		}
-	}
-
-	private void Bucle()
-	{
-		int numEnemies = muertes;
-		for (int i = 0; i < numEnemies; i++)
-		{
-
-			SpawnSpamDeads();
 		}
 	}
 
@@ -66,9 +39,8 @@ public class WorldScript : MonoBehaviour
 
 	private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
 	{
-
-		Bucle();
-
+		for (int i = deadCount; i > 0; i--)
+			SpawnSpamDeads();
 	}
 
 	public void SpawnSpamDeads()

@@ -30,7 +30,7 @@ public class RespawnOut : MonoBehaviour
 
 		transform.position = startPoint.position;
 
-		scriptWorld.muertes++;
+		scriptWorld.deadCount++;
 
 		SceneManager.LoadScene(sceneName);
 	}  
