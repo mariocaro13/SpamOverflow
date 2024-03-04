@@ -6,13 +6,18 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-	public float timer = 0;
+	public float timer;
 
 	public TextMeshProUGUI timerPro;
 
+	private void Start()
+	{
+		timer = 3 * 60f;
+	}
+
 	private void Update()
 	{
-		timer = timer + Time.deltaTime;
+		timer = timer - Time.deltaTime;
 
 		timerPro.text = timer.ToString("f1");
 	}
