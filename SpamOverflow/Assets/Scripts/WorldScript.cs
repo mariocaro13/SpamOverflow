@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions.Must;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class WorldScript : MonoBehaviour
 {
@@ -55,6 +56,11 @@ public class WorldScript : MonoBehaviour
 		//	timerScript.SendMessage("NextLevel");
 		//	lastSceneLoaded = scene.name;
 		//}
+
+		if (scene.name == "MainMenu")
+		{
+			deadCount = 0;
+		}
 	}
 
 	public void SpawnSpamDeads()

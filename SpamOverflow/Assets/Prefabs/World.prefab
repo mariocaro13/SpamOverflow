@@ -2015,7 +2015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerGame: 0
-  timerMax: Infinity
+  timerMax: 120
   score: 0
   multiplaller: 1
   GameOverCOntador: {fileID: 5795224368821920337}
